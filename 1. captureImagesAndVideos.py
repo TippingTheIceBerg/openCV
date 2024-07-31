@@ -3,7 +3,7 @@ import cv2 as cv
 img = cv.imread("Photos/th.jpg")
 # shows the image
 cv.imshow("Elden", img )
-# waits infinte time for key to be pressed, if not included iamg wll disappear
+# waits infinte time for key to be pressed, if not included img wll disappear
 cv.waitKey(0)
 # one known issue is that some images that are very large it can go offscreen
 
@@ -12,7 +12,7 @@ cv.waitKey(0)
 # method takes integer args - 0,1,2 or a path to a video file
 # we use 0,1,2 if we are using like a webcam, typically 0
 # capture is an instance of this video capture clause
-capture = cv.VideoCapture("Videos/lily.mp4")
+capture = cv.VideoCapture("Videos/liliy.mp4")
 
 # videos use while loop and read video frame by frame
 
@@ -32,4 +32,3 @@ while True:
 
 capture.release()
 cv.destroyAllWindows()
- 

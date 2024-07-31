@@ -16,7 +16,7 @@ def rescaleFrame(frame, scale=0.75):
     return cv.resize(frame, dimensions, interpolation=cv.INTER_AREA)
 
 
-capture = cv.VideoCapture("Videos/lily.mp4")
+capture = cv.VideoCapture("Videos/liliy.mp4")
 
 
 while True:

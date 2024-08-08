@@ -2,6 +2,8 @@ import cv2 as cv
 import numpy as np
 # pixel is turned on with a value of 1, and off if 0
 
+
+img = cv.imread("Photos/sudoku.png")
 blank = np.zeros((400,400), dtype="uint8")
 
 rectangle = cv.rectangle(blank.copy(), (30,30),(370,370), 255, -1)

@@ -37,7 +37,7 @@ cv.imshow("shownContours",blank)
 # we can estimate the amount of edges since contours are list, and we can print a list with len
 print(f'{len(contours)}')
 
-
+# best to try to use canny first before threshold since threshold has 
 
 # we can also find contours with thresholds instead of using canny
 cv.waitKey(0)

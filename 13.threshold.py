@@ -23,7 +23,7 @@ cv.imshow("Simple thresh",thresh)
 # for an inverse, cv.thresh_binary,_inv
 threshold,thresh_inv = cv.threshold(gray,200,255,cv.THRESH_BINARY_INV )
 cv.imshow("Simple thresh Inverse",thresh_inv)
-# some flaws of simple is we must set the threshold value
+# some flaws of simple is we must set  the threshold value
 
 
 # Adaptive Threshold - computer finds the opt threshold

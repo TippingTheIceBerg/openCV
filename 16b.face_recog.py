@@ -30,7 +30,9 @@ faces_rect  = haar_cascade.detectMultiScale(gray,1.1,15)
 
 for (x,y,w,h) in faces_rect:
     faces_roi = gray[y:y+h,x:x+w]
+    # the actual predict
     label, confidence = face_recognizer.predict(faces_roi)
+    # since using num values, we do people[label]
     print(f"label = {people[label]} with confidence of {confidence}")
     cv.putText(img, str(people[label]),(20,20),cv.FONT_HERSHEY_COMPLEX, 1.0, (0,255,0),2)
     cv.rectangle(img,(x,y),(x+w, y+h),(0,255,0),thickness=2)
